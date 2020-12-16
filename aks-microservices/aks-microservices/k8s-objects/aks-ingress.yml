@@ -1,16 +1,15 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-demo
-  annotations: # An annotation allows you to attach non-identifying metadata, such as ingress configurations, for workloads. You can think of the annotation as an internal label that defines specific configurations for resources.
-    kubernetes.io/ingress.class: addon-http-application-routing
+  name: aks-ingress
+  annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: aks-service.32aefda6d4a44a0094f9.eastus.aksapp.io
-      http:
-        paths:
-          - backend: # How the ingress will handle the requests
-              serviceName: aks-service # Which service the request will be forwarded to
-              servicePort: http # Which port in that service
-            path: "" # Which path is this rule referring to
+  - http:
+      paths:
+      - backend:
+          serviceName: aks-services1
+          servicePort: 80
+        path: /service1
+        pathType: Prefix

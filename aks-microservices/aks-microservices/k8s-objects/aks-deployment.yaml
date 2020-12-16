@@ -69,7 +69,7 @@ metadata:
 spec:
   type: ClusterIP
   selector: # pod selector with below labels
-    app: aks
+    app: aks-services1
   ports:
     - port: 80 # SERVICE exposed port
       name: http
