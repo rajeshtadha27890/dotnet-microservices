@@ -62,14 +62,14 @@ spec:
 
 ---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: aks-cluster-service
-# spec:
-#   type: ClusterIP
-#   selector: # pod selector with below labels
-#     app: aks
-#   ports:
-#     - port: 80 # SERVICE exposed port
-#       name: http
+apiVersion: v1
+kind: Service
+metadata:
+  name: aks-cluster-service
+spec:
+  type: ClusterIP
+  selector: # pod selector with below labels
+    app: aks
+  ports:
+    - port: 80 # SERVICE exposed port
+      name: http
