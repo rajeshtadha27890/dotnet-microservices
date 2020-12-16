@@ -24,19 +24,19 @@ spec:
               name: http
             - containerPort: 443
               name: https
-        livenessProbe:
-            httpGet:
-              port: 80
-              path: /liveness
-            initialDelaySeconds: 10
-            periodSeconds: 15
-        readinessProbe:
-            httpGet:
-              port: 80
-              path: /hc
-            initialDelaySeconds: 90
-            periodSeconds: 60
-            timeoutSeconds: 5
+        # livenessProbe:
+        #     httpGet:
+        #       port: 80
+        #       path: /liveness
+        #     initialDelaySeconds: 10
+        #     periodSeconds: 15
+        # readinessProbe:
+        #     httpGet:
+        #       port: 80
+        #       path: /hc
+        #     initialDelaySeconds: 90
+        #     periodSeconds: 60
+        #     timeoutSeconds: 5
         resources:
             requests: # Minimum amount of resources requested
               cpu: 100m
