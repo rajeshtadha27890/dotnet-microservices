@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace aks_microservices.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("service1/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
