@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aks-microservices", "aks-microservices\aks-microservices.csproj", "{C38A04FB-2475-45BD-9E34-B4F7BF89889B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "microservice2", "microservice2\microservice2.csproj", "{8655CCC3-427F-456B-8F43-526469B0E03E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C38A04FB-2475-45BD-9E34-B4F7BF89889B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38A04FB-2475-45BD-9E34-B4F7BF89889B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38A04FB-2475-45BD-9E34-B4F7BF89889B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38A04FB-2475-45BD-9E34-B4F7BF89889B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8655CCC3-427F-456B-8F43-526469B0E03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8655CCC3-427F-456B-8F43-526469B0E03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8655CCC3-427F-456B-8F43-526469B0E03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8655CCC3-427F-456B-8F43-526469B0E03E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78119CE5-6C29-4694-92F9-8842B3F7D2BA}
+	EndGlobalSection
+EndGlobal
