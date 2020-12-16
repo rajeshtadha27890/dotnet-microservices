@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  aks-microservices:
+    image: ${DOCKER_REGISTRY-}aksmicroservices
+    build:
+      context: .
+      dockerfile: aks-microservices/Dockerfile
+
+  microservice2:
+    image: ${DOCKER_REGISTRY-}microservice2
+    build:
+      context: .
+      dockerfile: microservice2/Dockerfile
+

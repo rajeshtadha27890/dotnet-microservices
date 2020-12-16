@@ -5,6 +5,7 @@
     <RootNamespace>aks_microservices</RootNamespace>
     <UserSecretsId>988b719c-b970-4ec4-a4aa-67c953f044f6</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
